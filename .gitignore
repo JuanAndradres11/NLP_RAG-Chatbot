@@ -1,0 +1,14 @@
+# Ignore virtual environment folder
+venv/
+
+# Ignore large files in venv
+venv/Lib/site-packages/torch/lib/torch_cpu.dll
+venv/Lib/site-packages/torch/lib/dnnl.lib
+
+# Ignore large binary files
+*.dll
+*.lib
+
+# Ignore Python cache and log files
+*.pyc
+*.log

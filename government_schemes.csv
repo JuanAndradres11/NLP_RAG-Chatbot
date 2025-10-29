@@ -1,0 +1,46 @@
+scheme_name,category,eligibility,age_group,benefits,website_url
+Midday Meal Scheme,Education,Both,6-14,Nutritious meals in schools,http://example.com/midmeal
+National Scholarship,Education,Both,12-25,Financial aid for education,http://example.com/scholar
+Kisan Samman Nidhi,Agriculture,Farmers,18+,Direct cash transfer to farmers,http://example.com/kisan
+PM Awas Yojana,Housing,Economically Weaker,18+,Housing for the poor,http://example.com/awas
+Pradhan Mantri Gram Sadak Yojana,Infrastructure,Villagers,All,Improved rural roads,http://example.com/pmgs
+Swachh Bharat Mission,Health,All,All,Sanitation and hygiene promotion,http://example.com/swachh
+Ayushman Bharat,Health,Economically Weaker,All,Health insurance coverage,http://example.com/ayushman
+Mahatma Gandhi National Rural Employment Guarantee Act,Employment,Rural Families,18+,Guaranteed employment,http://example.com/mgnrega
+Skill India Mission,Skill Development,Youth,18-35,Skill training programs,http://example.com/skillindia
+Beti Bachao Beti Padhao,Education,Girls,All,Awareness and education for girls,http://example.com/bbbp
+PM Kisan Samman Nidhi,Agriculture,Farmers,18+,Direct income support,http://example.com/pkisan
+Pradhan Mantri Ujjwala Yojana,Energy,Women,18+,Free LPG connections,http://example.com/ujjwala
+Integrated Child Development Services,Health,Children,0-6,Nutrition and education,http://example.com/icds
+Pradhan Mantri Awas Yojana (Urban),Housing,Urban Poor,18+,Affordable housing,http://example.com/pmayurban
+Digital India,Technology,All,All,Digital literacy and access,http://example.com/digitalindia
+Pradhan Mantri Fasal Bima Yojana,Agriculture,Farmers,18+,Crop insurance,http://example.com/pmfby
+Rural Skill Development Scheme,Skill Development,Rural Youth,18-35,Skill training,http://example.com/rural-skill
+Pradhan Mantri Vaya Vandana Yojana,Finance,Seniors,60+,Pension scheme for seniors,http://example.com/vv
+Mukhyamantri Kanya Suraksha Yojana,Education,Girls,0-18,Education and financial assistance,http://example.com/mks
+Rural Housing Scheme,Housing,Rural Poor,18+,Housing for rural families,http://example.com/rural-housing
+National Food Security Act,Food Security,All,All,Subsidized food grains,http://example.com/nfsa
+Pradhan Mantri Awas Yojana (Gramin),Housing,Rural Poor,18+,Housing for rural families,http://example.com/pmay-gramin
+Jal Jeevan Mission,Water Supply,All,All,Tap water supply for households,http://example.com/jaljeevan
+Mahatma Gandhi Sarbat Sehat Bima Yojana,Health,All,All,Health insurance for all,http://example.com/mgsb
+Atmanirbhar Bharat,Entrepreneurship,All,All,Support for local businesses,http://example.com/atma
+PM Garib Kalyan Anna Yojana,Food Security,Economically Weaker,All,Free food grains,http://example.com/pgk
+Deen Dayal Upadhyaya Grameen Kaushalya Yojana,Skill Development,Rural Youth,18-35,Skill training for rural youth,http://example.com/ddugky
+Pradhan Mantri Awas Yojana (Housing for All),Housing,All,18+,Affordable housing for all,http://example.com/housingforall
+Sukanya Samriddhi Yojana,Finance,Girls,0-18,Financial scheme for girls,http://example.com/sukanya
+PM Pradhan Mantri Jeevan Jyoti Bima Yojana,Finance,All,18+,Life insurance scheme,http://example.com/jjy
+Kushal Yuva Program,Skill Development,Youth,15-28,Skill development and training,http://example.com/kushal
+Bharatmala Pariyojana,Infrastructure,All,All,Road development project,http://example.com/bharatmala
+Digital India Initiative,Technology,All,All,Promoting digital literacy,http://example.com/digital-initiative
+Pradhan Mantri Kisan Mandhan Yojana,Finance,Farmers,60+,Pension scheme for farmers,http://example.com/pmkmy
+National Rural Livelihoods Mission,Employment,Rural Families,18+,Livelihood support for rural families,http://example.com/nrlm
+Mission Indradhanush,Health,Pregnant Women and Children,All,Vaccination program,http://example.com/mission
+Ayushman Bharat Digital Mission,Health,All,All,Digital health records,http://example.com/abdm
+National Agriculture Market,Agriculture,Farmers,18+,Online agricultural trading platform,http://example.com/nam
+Saubhagya Scheme,Energy,All,18+,Free electricity connections,http://example.com/saubhagya
+Pradhan Mantri Mudra Yojana,Finance,All,All,Loan scheme for small businesses,http://example.com/mudra
+Integrated Skill Development Scheme,Skill Development,Youth,18-35,Skill training in various sectors,http://example.com/isds
+National Mission for Clean Ganga,Environment,All,All,Cleaning the Ganga river,http://example.com/nmcg
+Bharatiya Poshan Krishi Kosh,Health,All,All,Nutrition-sensitive agriculture,http://example.com/bpkk
+Skill Development Initiative Scheme,Skill Development,Youth,18-35,Skill development programs,http://example.com/sdis
+National Clean Energy Fund,Energy,All,All,Support for clean energy projects,http://example.com/ncef
