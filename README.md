@@ -1,96 +1,104 @@
-# 🤖 Chatbot Backend (Flask API + Finetuning Notebook)
+Sure — here’s a **complete, compact README** you can just copy-paste directly into your project folder:
 
-This project is a **Flask-based chatbot API** scaffold, designed to serve a fine-tuned LLM. It includes:
+```markdown
+# 🧠 NLP + RAG-Based Government Schemes Chatbot
 
-* ✅ A clean **Flask REST API** to interact with your model (via Postman or other clients)
-* 🧠 A **Jupyter notebook** used to fine-tune the model (for reference purposes only)
-* 🧳 A folder (`finetuned_model/`) where your trained model should be placed
+A simple NLP and Retrieval-Augmented Generation (RAG)-based chatbot that retrieves relevant information about government schemes using keyword extraction and similarity search — **no large model used**.
 
 ---
 
-## ⚙️ Quick Start
+## 🚀 Project Structure
+```
 
-### 1. Clone the Repository
+project/
+│
+├── app.py               # Flask backend API for chatbot
+├── chatbot.py           # NLP + RAG logic (retrieval + dynamic response)
+├── dataloader.py        # Loads and preprocesses CSV dataset
+├── data/
+│   └── schemes.csv      # Dataset of government schemes
+└── README.md
+
+````
+
+---
+
+## 🧩 Requirements
+
+Install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/chatbot-flask-framework.git
-cd chatbot-flask-framework
+pip install flask pandas spacy scikit-learn
+python -m spacy download en_core_web_sm
+````
+
+---
+
+## ▶️ Run the Chatbot
+
+Start the Flask app:
+
+```bash
+python app.py
+```
+
+The server will run by default at:
+
+```
+http://127.0.0.1:5000
 ```
 
 ---
 
-### 2. Install Dependencies
+## 💬 Send a Request (from terminal)
+
+Use `curl` to send a JSON query:
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+curl -X POST http://127.0.0.1:5000/chat \
+     -H "Content-Type: application/json" \
+     -d "{\"query\": \"What are the benefits of the farmer insurance scheme?\"}"
 ```
 
----
-
-### 3. Add the Model
-
-* If you’ve already fine-tuned a model using the included notebook or elsewhere:
-
-  * Place the model files (like `pytorch_model.bin`, `config.json`, `tokenizer/`) inside the `finetuned_model/` directory.
-
----
-
-### 4. Run the Flask App
-
-```bash
-python main.py
-```
-
-The server will run at `http://127.0.0.1:5000/`
-
----
-
-## 📬 Postman API Usage
-
-### Endpoint: `POST /chat`
-
-#### Request:
+You’ll get a response like:
 
 ```json
 {
-  "query": "What are the benefits of the XYZ scheme?"
-}
-```
-
-#### Response:
-
-```json
-{
-  "response": "The XYZ scheme offers free medical treatment to eligible citizens..."
-}
-```
-
----
-
-## 🧪 Testing with Postman
-
-* Method: `POST`
-* URL: `http://127.0.0.1:5000/chat`
-* Body → `raw` → `JSON`:
-
-```json
-{
-  "query": "Tell me about government education schemes"
+  "response": "The Farmer Insurance Scheme provides coverage against crop loss due to natural calamities..."
 }
 ```
 
 ---
 
-## 🧠 Notebook: `notebooks/fine_tuning.ipynb`
+## 🧠 How It Works
 
-* This notebook was used to fine-tune a language model on government scheme data.
-* **Note:** Model training is not done in the Flask app — it’s decoupled.
-* Once training is complete, export the model to `finetuned_model/` to use it in the API.
+1. **Data Preprocessing (`dataloader.py`)**
+
+   * Cleans, normalizes, and lemmatizes scheme data using spaCy.
+
+2. **Query Handling (`chatbot.py`)**
+
+   * Uses TF-IDF vectorization + cosine similarity to find the most relevant scheme(s).
+   * Constructs a dynamic response using retrieved text (like eligibility, benefits, etc).
+
+3. **API Endpoint (`app.py`)**
+
+   * Exposes a `/chat` route that accepts user queries via JSON POST request.
+
 
 ---
 
-## 🛡️ License
+## 🧰 Notes
 
-MIT License. Use it, build on it, tweak it. Just remember: this repo doesn’t come with a built-in conscience — your model's responses are your responsibility.
+* No external LLM or WandB setup needed.
+* Works completely offline with your CSV dataset.
+* Modify similarity threshold or combine multiple columns to refine retrieval.
+
+---
+
+**Author:** Juann
+**License:** MIT
+**Description:** Lightweight RAG + NLP chatbot for scheme information retrieval.
+
+```
+
